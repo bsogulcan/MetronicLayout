@@ -17,7 +17,7 @@
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
-              "zone.js"
+
             ],
             "tsConfig": "tsconfig.app.json",
             "assets": [
@@ -25,9 +25,32 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/assets/css/style.bundle.css",
+              "src/assets/plugins/global/plugins.bundle.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/js/components/util.js",
+              "src/assets/js/components/blockui.js",
+              "src/assets/js/components/cookie.js",
+              "src/assets/js/components/dialer.js",
+              "src/assets/js/components/drawer.js",
+              "src/assets/js/components/event-handler.js",
+              "src/assets/js/components/feedback.js",
+              "src/assets/js/components/image-input.js",
+              "src/assets/js/components/menu.js",
+              "src/assets/js/components/password-meter.js",
+              "src/assets/js/components/scroll.js",
+              "src/assets/js/components/scrolltop.js",
+              "src/assets/js/components/search.js",
+              "src/assets/js/components/stepper.js",
+              "src/assets/js/components/sticky.js",
+              "src/assets/js/components/swapper.js",
+              "src/assets/js/components/toggle.js",
+              "src/assets/plugins/global/plugins.bundle.js",
+              "src/assets/js/scripts.bundle.js",
+              "node_modules/zone.js/dist/zone.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -87,12 +110,20 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/assets/css/style.bundle.css",
+              "src/assets/plugins/global/plugins.bundle.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/js/scripts.bundle.js",
+              "src/assets/plugins/global/plugins.bundle.js"
+            ]
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }
